@@ -1,0 +1,8 @@
+1. flutter clean
+2. cd ios
+3. pod deintegrate
+4. flutter pub get
+5. pod install
+6. cd ..
+7. flutter build ios
+8. flutter run
