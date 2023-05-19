@@ -15,7 +15,17 @@ SOLUTION 2
 Go to iOS folder of the project run
 3. pod init
 4. pod install
-I hope this solution solve your problem.
+5. flutter build ios
+6. Archived in xcode
+
+If they are errors then:
+
+In xcode go to Runner > Build settings
+In User-Defined, add
+1. FLUTTER_ROOT with value /users/cweb/Downloads/flutter-4
+2. Archived in xcode
+3. If not working, in xcode open Pods > Targets Support Files > Pods-Runner > Pods-Runner-frameworks
+4. At line 44 remove -f in source="$(readlink -f "${source}")"
 
 # To solve this error
 [!] CocoaPods did not set the base configuration of your project because your project already has a custom config set. In order for CocoaPods integration to work at all, please either set the base configurations of the target `Runner` to `Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig` or include the `Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig` in your build configuration (`Flutter/Release.xcconfig`).
