@@ -26,6 +26,9 @@ In User-Defined, add
 2. Archived in xcode
 3. If not working, in xcode open Pods > Targets Support Files > Pods-Runner > Pods-Runner-frameworks
 4. At line 44 remove -f in source="$(readlink -f "${source}")"
+5. Archived in xcode
+
+
 
 # To solve this error
 [!] CocoaPods did not set the base configuration of your project because your project already has a custom config set. In order for CocoaPods integration to work at all, please either set the base configurations of the target `Runner` to `Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig` or include the `Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig` in your build configuration (`Flutter/Release.xcconfig`).
